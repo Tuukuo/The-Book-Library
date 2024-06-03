@@ -33,6 +33,13 @@ function searchBooks() {
         </div>
       `;
       bookDiv.innerHTML = bookInfo;
+      
+      // bookDiv.style.flexDirection = "row"
+      // bookDiv.style.width = "300px"
+      // bookDiv.style.height = "auto"
+      // bookDiv.style.padding = "10px"
+      // bookDiv.style.maxWidth= "400px"
+
       resultsDiv.appendChild(bookDiv);
     });
   console.log({bookInfo})
