@@ -1,13 +1,19 @@
+body{
+    background-image: url(https://img.freepik.com/premium-photo/flat-beige-gypsophila-flower-template-text-message-minimalist-horizontal-long-background_176841-14358.jpg?w=360);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #h1{
     padding-left: 100px;
     color: rgb(97, 4, 51);
     padding-top: 100px;
-    font-size: 2.95rem;
+    font-size: 60px;
 }
 #h4{
     padding-left: 100px;
     color: rgb(97, 4, 51);
-    font-size: 1.35rem;
+    font-size: 2.5rem;
 }  
 .nav{
     display: flex;
@@ -25,19 +31,21 @@
 }
 #p{
     padding-left: 100px;  
-    font-size: 1.35rem;
+    font-size:30px;
 }
 .content{
     display: flex;
+    font-size: 40px;
 }
 #booksImage{
-    height: 500px;
-    width: 300px;
-    padding-left: 200px;
+    height: 720px;
+    width: 600px;
+    padding-left: 150px;
 }
 #searchInput{
     padding: 20px;
     width: 350px;
+    border-radius: 10px;
     
 }
 #search{
@@ -45,13 +53,15 @@
 }
 
 #readButton{
-    padding: 20px ;
+    padding: 10px ;
     margin-left: 20%;
     border-radius: 20px;
     background-color: purple;
     color: white;
+    height: 50px;
+    width: 30%;
     font-style: italic;
-    font-size: large;
+    font-size: 30px;
     font-weight: bold;
    
 }
@@ -93,6 +103,19 @@
   #results {
     margin-top: 20px;
     text-align: left;
-    display: flex;
+    flex-direction: row;
+     max-width: 400px;
+    display: flex; 
+    /* flex-direction: row; */
     justify-content: space-around;
+    gap: 20%; 
   }
+
+.bookDiv{
+background-color: #0056B3;
+  width: 300px;
+  padding: 100px;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+}
