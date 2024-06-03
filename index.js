@@ -33,7 +33,7 @@ function searchBooks() {
         </div>
       `;
       bookDiv.innerHTML = bookInfo;
-      
+      bookDiv.style.color = "black"
       // bookDiv.style.flexDirection = "row"
       // bookDiv.style.width = "300px"
       // bookDiv.style.height = "auto"

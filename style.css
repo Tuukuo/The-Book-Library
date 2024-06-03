@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://img.freepik.com/premium-photo/flat-beige-gypsophila-flower-template-text-message-minimalist-horizontal-long-background_176841-14358.jpg?w=360);
+    background-image: url(https://img.freepik.com/premium-vector/light-blue-abstract-background-with-bokeh-form-circles_78007-560.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -111,6 +111,10 @@ body{
     gap: 20%; 
   }
 
+  #searchingbooks{
+font-size: 70px;
+color: black;
+  }
 .bookDiv{
 background-color: #0056B3;
   width: 300px;
