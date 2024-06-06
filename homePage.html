@@ -11,7 +11,30 @@
     <h1 id="searchingbooks">Book Search</h1>
     <input type="text" id="searchInput" placeholder="Enter keyword">
     <button onclick="searchBooks()">Search</button>
-    <div id="results"></div>
+    <div id="res">
+  <div id="categories">
+    <h1 id="catTitle">Categories</h1>
+    <div id="subCategories">
+      <h2 onclick="displayBTS()">BTS</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayRomance()">Romance</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayHorror()">Horror</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayMagazines()">Magazines</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayCode()">Code</h2>
+    </div>
+    <div id="subCategories">
+      <h2 onclick="displayReligious()">Religion</h2>
+    </div>
+  </div>
+  <div id="results"></div>
+  </div>
   </div>
   <!-- <img src="images/bookBackGround.avif" id="homepageImage"> -->
   <script src="index.js"></script>

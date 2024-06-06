@@ -16,7 +16,7 @@ function searchBooks() {
     if (books.length === 0) {
       resultsDiv.innerHTML = 'No books found';
       return;
-    }
+     }
     books.forEach(book => {
       const title = book.volumeInfo.title;
       const authors = book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown Author';
@@ -33,14 +33,99 @@ function searchBooks() {
         </div>
       `;
       bookDiv.innerHTML = bookInfo;
-      bookDiv.style.color = "black"
-      // bookDiv.style.flexDirection = "row"
-      // bookDiv.style.width = "300px"
-      // bookDiv.style.height = "auto"
-      // bookDiv.style.padding = "10px"
-      // bookDiv.style.maxWidth= "400px"
+      bookDiv.style.color = "purple"
+      bookDiv.style.width = "300px"
+      bookDiv.style.padding = "2px"
 
       resultsDiv.appendChild(bookDiv);
     });
   console.log({bookInfo})
   }
+  function displayAllBooks() {
+    const defaultQueryTwo = 'vampire diaries';
+    const urlTwo = `https://www.googleapis.com/books/v1/volumes?q=${defaultQueryTwo}`;
+    fetch(urlTwo)
+     .then(response => response.json())
+     .then(data => {
+        console.log(displayResults(data.items));
+      })
+     .catch(error => {
+        console.error('Error fetching books:', error);
+      });
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    displayAllBooks();
+  });
+  function displayRomance() {
+    const defaultQuery = 'romance';
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${defaultQuery}`;
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        console.log(displayResults(data.items));
+      })
+     .catch(error => {
+        console.error('Error fetching books:', error);
+      });
+  }
+  function displayHorror() {
+    const defaultQuery = 'horror';
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${defaultQuery}`;
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        console.log(displayResults(data.items));
+      })
+     .catch(error => {
+        console.error('Error fetching books:', error);
+      });
+  }
+  function displayMagazines() {
+    const defaultQuery = 'magazines';
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${defaultQuery}`;
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        console.log(displayResults(data.items));
+      })
+     .catch(error => {
+        console.error('Error fetching books:', error);
+      });
+  }
+  function displayCode() {
+    const defaultQuery = 'code';
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${defaultQuery}`;
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        console.log(displayResults(data.items));
+      })
+     .catch(error => {
+        console.error('Error fetching books:', error);
+      });
+  }
+  function displayReligious() {
+    const defaultQuery = 'religious';
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${defaultQuery}`;
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        console.log(displayResults(data.items));
+      })
+     .catch(error => {
+        console.error('Error fetching books:', error);
+      });
+  }
+  function displayBTS() {
+    const defaultQuery = 'BTS';
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${defaultQuery}`;
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+        console.log(displayResults(data.items));
+      })
+     .catch(error => {
+        console.error('Error fetching books:', error);
+      });
+  }
+  
