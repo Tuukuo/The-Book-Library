@@ -207,10 +207,7 @@ body{
 
     
 }
-/* #logo{
-    padding: 10p;
-  
-} */
+
 #p{
     padding-left: 100px;  
     font-size:30px;
@@ -303,7 +300,6 @@ body{
     display: flex;
     margin-left: 10%;
     flex-wrap: wrap;
-    /* flex-direction: row; */
   }
 
   #searchingbooks{
@@ -347,7 +343,6 @@ body{
   padding: 5px;
   font-size: 20px;
   position: absolute;
-  /* left:90%; */
  }
     
    
@@ -388,10 +383,7 @@ body{
 
     
 }
-/* #logo{
-    padding: 10p;
-  
-} */
+
 #p{
     padding-left: 100px;  
     font-size:20px;
@@ -484,7 +476,6 @@ body{
     display: flex;
     margin-left: 10%;
     flex-wrap: wrap;
-    /* flex-direction: row; */
   }
 
   #searchingbooks{
@@ -527,7 +518,6 @@ body{
   padding: 5px;
   font-size: 20px;
   position: absolute;
-  /* left:20%; */
  }
 
 
@@ -568,10 +558,7 @@ body{
 
     
 }
-/* #logo{
-    padding: 10p;
-  
-} */
+
 #p{
     padding-left: 100px;  
     font-size:30px;
@@ -664,7 +651,6 @@ body{
     display: flex;
     margin-left: 10%;
     flex-wrap: wrap;
-    /* flex-direction: row; */
   }
 
   #searchingbooks{
